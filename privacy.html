@@ -34,6 +34,7 @@
 
       <h2>2. Zweck der App</h2>
       <p>DienstPilot ermöglicht es Nutzern, Dienstpläne als Foto oder PDF hochzuladen, automatisch analysieren zu lassen und erkannte Schichten auf Wunsch in den persönlichen Kalender zu übernehmen.</p>
+      <p>Wenn Nutzer mit dieser Datenverarbeitung nicht einverstanden sind, sollten sie die App nicht verwenden oder einzelne optionale Funktionen, etwa den Kalenderzugriff, nicht aktivieren.</p>
 
       <h2>3. Lokal auf dem Gerät gespeicherte Daten</h2>
       <p>Die App kann folgende Daten lokal auf dem Gerät speichern:</p>
@@ -47,50 +48,60 @@
       </ul>
       <p>Diese Daten werden grundsätzlich lokal auf dem Gerät verarbeitet und nicht dauerhaft auf Servern von DienstPilot gespeichert.</p>
 
-      <h2>4. Upload und Analyse von Dienstplänen</h2>
+      <h2>4. Support-Kommunikation</h2>
+      <p>Wenn Nutzer per E-Mail Kontakt aufnehmen, werden die dabei übermittelten Angaben verarbeitet, etwa E-Mail-Adresse, Inhalt der Nachricht und technische Informationen, die der Nutzer freiwillig mitteilt. Diese Daten werden ausschließlich zur Bearbeitung der Anfrage und zur Kommunikation mit dem Nutzer verwendet.</p>
+
+      <h2>5. Upload und Analyse von Dienstplänen</h2>
       <p>Wenn der Nutzer einen Dienstplan hochlädt, wird die ausgewählte Datei verschlüsselt an den Server von DienstPilot übertragen. Dort wird sie automatisiert verarbeitet und zur Analyse an einen KI-Dienstleister übermittelt.</p>
       <p>Der hochgeladene Dienstplan kann personenbezogene Daten enthalten, insbesondere Namen, Schichtzeiten, Dienstkürzel oder andere dienstplanbezogene Informationen. Die Verarbeitung erfolgt ausschließlich zum Zweck der Analyse des Dienstplans und der Bereitstellung der erkannten Schichten für den Nutzer.</p>
       <p>Hochgeladene Dateien werden nach Abschluss der Verarbeitung vom Server gelöscht. Inhalte hochgeladener Dienstpläne werden nicht in Anwendungslogs gespeichert. Technische Serverlogs können Verbindungsdaten wie Zeitpunkt, Statuscode und IP-Adresse enthalten und werden nur für Betrieb, Sicherheit und Fehleranalyse verwendet.</p>
 
-      <h2>5. Einsatz von OpenAI</h2>
+      <h2>6. Einsatz von OpenAI</h2>
       <p>Zur automatisierten Analyse von Dienstplänen nutzt DienstPilot Dienste von OpenAI. Dabei können hochgeladene Dienstplandaten und vom Nutzer bereitgestellte Zusatzinformationen, beispielsweise bekannte Schichtcodes oder Antworten auf Rückfragen, an OpenAI übermittelt werden.</p>
       <p>Nach Angaben von OpenAI werden über die API übermittelte Inhalte standardmäßig nicht zum Training der Modelle verwendet. OpenAI kann API-Eingaben und -Ausgaben zur Bereitstellung des Dienstes und zur Missbrauchserkennung zeitlich begrenzt speichern.</p>
       <p>Weitere Informationen zur Datenverarbeitung durch OpenAI finden sich unter: <a href="https://openai.com/privacy" rel="noopener">https://openai.com/privacy</a></p>
 
-      <h2>6. Hosting</h2>
+      <h2>7. Hosting</h2>
       <p>Das Backend der App wird über Railway betrieben. Im Rahmen des Hostings können technische Verbindungsdaten verarbeitet werden, die für den Betrieb, die Sicherheit und die Fehleranalyse des Dienstes erforderlich sind.</p>
 
-      <h2>7. Technische Absicherung des Backends</h2>
+      <h2>8. Technische Absicherung des Backends</h2>
       <p>Zur Absicherung des Backends gegen Missbrauch nutzt DienstPilot Firebase App Check und Firebase Authentication mit anonymer Anmeldung. Dabei werden technische Tokens und eine anonyme Nutzerkennung verarbeitet, um zu prüfen, ob Anfragen aus einer echten App-Installation stammen und um Nutzungslimits durchzusetzen.</p>
+      <p>Zusätzlich können technische Daten wie Gerätetyp, Betriebssystemversion, App-Version, IP-Adresse, Zeitpunkt der Anfrage, Fehlerstatus und Nutzungsumfang einzelner Serverfunktionen verarbeitet werden, soweit dies für Sicherheit, Stabilität, Missbrauchsschutz und Fehleranalyse erforderlich ist.</p>
 
-      <h2>8. Kalenderzugriff</h2>
+      <h2>9. Kalenderzugriff</h2>
       <p>Der Zugriff auf den Kalender erfolgt nur nach ausdrücklicher Freigabe durch den Nutzer. Die App nutzt den Kalenderzugriff, um erkannte Dienste in den vom Nutzer ausgewählten Kalender einzutragen, zu aktualisieren oder zu löschen.</p>
       <p>Kalenderdaten werden nicht an den Server von DienstPilot übertragen. Wenn der Nutzer einen Apple-iCloud- oder Google-Kalender verwendet, werden die Kalenderereignisse jedoch an den jeweiligen Kalenderanbieter übermittelt.</p>
+      <p>Wenn Nutzer einen Google-Kalender verbinden, verarbeitet DienstPilot die von Google bereitgestellten Zugriffsdaten nur, um Kalenderlisten anzuzeigen und Schichten in den ausgewählten Kalender einzutragen, zu aktualisieren oder zu löschen. Die Nutzung von Informationen aus Google APIs erfolgt entsprechend der Google API Services User Data Policy einschließlich der Limited-Use-Anforderungen. Google-Kalenderdaten werden nicht für Werbung, Profilbildung oder andere nicht zur Kalenderfunktion gehörende Zwecke verwendet.</p>
 
-      <h2>9. Berechtigungen</h2>
+      <h2>10. Berechtigungen</h2>
       <p>DienstPilot kann folgende Berechtigungen anfragen:</p>
       <ul>
         <li>Kamera: zum Fotografieren von Dienstplänen,</li>
         <li>Fotos und Dateien: zum Auswählen von Dienstplanbildern oder PDF-Dateien,</li>
         <li>Kalender: zum Eintragen, Aktualisieren und Löschen von Diensten.</li>
       </ul>
+      <p>Die Berechtigungen können über die Systemeinstellungen des Geräts widerrufen werden. Einzelne App-Funktionen können danach eingeschränkt oder nicht mehr verfügbar sein.</p>
 
-      <h2>10. Abonnements und Zahlungsabwicklung</h2>
+      <h2>11. Abonnements und Zahlungsabwicklung</h2>
       <p>DienstPilot nutzt RevenueCat zur technischen Verwaltung von Premium-Abonnements. RevenueCat verarbeitet hierfür technische Informationen, die erforderlich sind, um den Abostatus zu prüfen und Premiumfunktionen freizuschalten.</p>
       <p>Die Zahlungsabwicklung erfolgt über Apple. DienstPilot verarbeitet keine Zahlungsdaten wie Kreditkarteninformationen.</p>
       <p>Weitere Informationen zu RevenueCat: <a href="https://www.revenuecat.com/privacy" rel="noopener">https://www.revenuecat.com/privacy</a></p>
 
-      <h2>11. Automatisierte Analyse</h2>
+      <h2>12. Werbung, Tracking und Analytics</h2>
+      <p>DienstPilot verwendet nach aktuellem Stand keine Werbenetzwerke, keine Meta-SDKs, keine App-Tracking-Transparency-Abfrage zu Werbezwecken und keine Analysewerkzeuge zur Erstellung von Marketingprofilen. Personenbezogene Daten werden nicht verkauft.</p>
+
+      <h2>13. Automatisierte Analyse</h2>
       <p>Die KI-Analyse dient ausschließlich der technischen Erkennung von Dienstinformationen aus hochgeladenen Dienstplänen. Sie trifft keine rechtlich verbindlichen Entscheidungen. Nutzer sollten erkannte Dienste vor der Übernahme prüfen.</p>
 
-      <h2>12. Rechtsgrundlagen</h2>
+      <h2>14. Rechtsgrundlagen</h2>
       <p>Die Verarbeitung erfolgt, soweit sie für die Bereitstellung der App-Funktionen erforderlich ist, auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Soweit eine Einwilligung erforderlich ist, etwa für den Zugriff auf den Kalender, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.</p>
-      <p>Soweit technische Daten zur Sicherheit, Stabilität und Fehleranalyse verarbeitet werden, erfolgt dies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
+      <p>Soweit technische Daten zur Sicherheit, Stabilität, Missbrauchsvermeidung und Fehleranalyse verarbeitet werden, erfolgt dies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Soweit Daten zur Erfüllung gesetzlicher Pflichten verarbeitet werden müssen, erfolgt dies auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO.</p>
 
-      <h2>13. Speicherdauer</h2>
+      <h2>15. Speicherdauer</h2>
       <p>Lokal gespeicherte Daten bleiben auf dem Gerät gespeichert, bis der Nutzer sie in der App löscht oder die App deinstalliert. Hochgeladene Dienstplandateien werden nach Abschluss der Analyse vom Server gelöscht.</p>
+      <p>Support-E-Mails werden nur so lange aufbewahrt, wie dies zur Bearbeitung der Anfrage und zur Nachvollziehbarkeit der Kommunikation erforderlich ist. Technische Logs werden nur für einen begrenzten Zeitraum gespeichert, soweit sie für Betrieb, Sicherheit und Fehleranalyse benötigt werden.</p>
 
-      <h2>14. Empfänger und Dienstleister</h2>
+      <h2>16. Empfänger und Dienstleister</h2>
       <p>Zur Bereitstellung der App können folgende Dienstleister eingesetzt werden:</p>
       <ul>
         <li>OpenAI zur KI-gestützten Analyse von Dienstplänen,</li>
@@ -99,14 +110,25 @@
         <li>RevenueCat für die Verwaltung von Abonnements,</li>
         <li>Apple für App Store, TestFlight, In-App-Käufe und gegebenenfalls iCloud-Kalender-Synchronisierung.</li>
       </ul>
+      <p>Je nach Funktion handeln diese Anbieter als Auftragsverarbeiter, eigenständige Verantwortliche oder gemeinsame Verantwortliche im Sinne der Datenschutzgesetze. DienstPilot beschränkt die Übermittlung auf das, was zur jeweiligen Funktion erforderlich ist.</p>
 
-      <h2>15. Drittlandübermittlung</h2>
+      <h2>17. Drittlandübermittlung</h2>
       <p>Eine Verarbeitung personenbezogener Daten kann auch in Ländern außerhalb der Europäischen Union erfolgen, insbesondere in den USA. Soweit erforderlich, erfolgt dies auf Grundlage geeigneter Garantien, etwa Standardvertragsklauseln oder Angemessenheitsbeschlüssen.</p>
 
-      <h2>16. Rechte der betroffenen Personen</h2>
-      <p>Betroffene Personen haben im Rahmen der gesetzlichen Voraussetzungen das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen. Außerdem besteht das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.</p>
+      <h2>18. Sicherheit</h2>
+      <p>DienstPilot setzt angemessene technische und organisatorische Maßnahmen ein, um personenbezogene Daten gegen Verlust, Missbrauch und unbefugten Zugriff zu schützen. Dazu gehören insbesondere verschlüsselte Übertragung, Zugriffsbeschränkungen, technische Schutzmechanismen gegen missbräuchliche Serveranfragen und eine möglichst datensparsame Verarbeitung. Eine absolute Sicherheit kann bei elektronischer Datenübertragung und -verarbeitung jedoch nicht garantiert werden.</p>
 
-      <h2>17. Kontakt</h2>
+      <h2>19. Kinder und Jugendliche</h2>
+      <p>DienstPilot richtet sich nicht gezielt an Kinder. Die App ist für Nutzer gedacht, die eigene Dienstpläne verwalten. Wenn bekannt wird, dass personenbezogene Daten eines Kindes ohne erforderliche Zustimmung verarbeitet wurden, werden diese Daten gelöscht, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+
+      <h2>20. Rechte der betroffenen Personen</h2>
+      <p>Betroffene Personen haben im Rahmen der gesetzlichen Voraussetzungen das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen. Soweit eine Verarbeitung auf Einwilligung beruht, kann die Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen werden.</p>
+      <p>Zur Bearbeitung einer Anfrage kann es erforderlich sein, die Identität der anfragenden Person zu überprüfen. Außerdem besteht das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.</p>
+
+      <h2>21. Änderungen dieser Datenschutzerklärung</h2>
+      <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App, eingesetzte Dienstleister oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung ist auf dieser Website abrufbar. Bei wesentlichen Änderungen kann zusätzlich ein Hinweis in der App erfolgen.</p>
+
+      <h2>22. Kontakt</h2>
       <p>Fragen zum Datenschutz können per E-Mail an <a href="mailto:EMAIL_EINTRAGEN">EMAIL_EINTRAGEN</a> gerichtet werden.</p>
     </div>
   </main>
